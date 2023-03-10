@@ -7,7 +7,7 @@
     font-family: 'Golos Text', sans-serif;
 } 
 body{
-    
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
@@ -15,12 +15,11 @@ body{
     background: rgb(0, 0, 0);  
 }
 .slide-container{
-    display:flex;
     position: relative; 
+    display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
     margin: 40px 0;
 }
 .slide-container::after{
@@ -57,7 +56,7 @@ body{
     background-color: rgba(233, 14, 14, 0.507);
     width: 280px;
     margin: 50px;
-    right: -250px;
+    
 }
 .image-content,
 .card-content{
@@ -77,10 +76,10 @@ body{
     padding: 3px;
 }
 .card-wrapper{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   
 }
 .card-image .card-img{

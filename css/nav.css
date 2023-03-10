@@ -43,7 +43,7 @@ header{
     display: none !important;
     cursor: pointer;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 896px){
   .menu-toggle-btn{
     display: block !important;
   }
