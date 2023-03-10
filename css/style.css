@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+} 
+body{
+    
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);  
+}
+.slide-container{
+    display:flex;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+}
+.slide-container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.slide-container .card {
+    position: relative;
+    min-width: 220px;
+    height: 350px;
+    box-shadow: inset 5px 5px 5px rgba(224, 9, 9, 0.918),
+                inset -5px -5px 15px rgba(255, 3, 3, 0.753),  
+                5px 5px 15px rgba(97, 2, 250, 0.87),
+                -5px -5px 15px rgb(4, 41, 255);
+   border-radius: 50px;
+   margin: 30px;
+}
+.slide-content{
+    margin: 0 40px;
+}
+.slide-container .card .slide-content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  
+}
+.card{
+    border-radius: 25px;
+    background-color: rgba(233, 14, 14, 0.507);
+    width: 280px;
+    margin: 50px;
+    right: -90px;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 13px;
+}
+.image-content{
+    row-gap: 5px;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  float: left;
+  
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid blue;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+} 
+.description{
+    font-size: 14px;
+    color: azure;
+    text-align: center;
+}
+.button{
+ border: none;
+ font-size: 16px;
+ color: azure;
+ padding: 8px 16px;
+ background-color: blue;
+ border-radius: 6px;
+ margin: 20px;
+ cursor: pointer;
+ transition: all 0.3s ease;
+}
+.button:hover{
+    background: rgb(5, 5, 80);
+}
+@media screen and (max-width: 1000px) {
+    .card-wrapper {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 568px) {
+    .card-wrapper {
+        width: 100%;
+        display: block;
+        margin-bottom: 2px;
+    }
+  }
+  
+  
