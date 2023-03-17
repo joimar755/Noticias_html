@@ -67,7 +67,7 @@ body{
 }
 .slide-container .card .dos.dos2{
     position: relative;
-    background: rgb(20, 11, 11);
+    background: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
