@@ -77,7 +77,7 @@ header.sticky a:hover{
 }
 header.sticky .logo, 
 header.sticky nav a{
-  color: black;
+  color: white;
  }
  
 @media screen and (max-width: 896px){
@@ -88,7 +88,7 @@ header.sticky nav a{
     position: fixed;
     width: 100%;
     max-width: 400px;
-    background: #07b3b3;
+    background: #003838;
     top: 90px;
     right: 0;
     display: none;
