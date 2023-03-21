@@ -1,12 +1,48 @@
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
     height: 90px;
-    background: rgba(240, 26, 26, 0.144);
+    background: rgba(77, 0, 0, 0.979);
+    z-index: 10000;
 }
 .inner-width{
-    max-width: 1000px;
-    padding: 0 10px;
-    margin: auto;
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: auto;
 }
+.logo{
+  float: left;
+  padding: 20px 0;
+}
+.logo img{
+  height: 55px;
+}
+.navigation-menu{
+  float: right;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+}
+.navigation-menu a{
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: .3s linear;
+}
+
+header.sticky{
+  padding: 5px;
+  background: rgb(255, 255, 255);
+}
+
 .logo{
     float: left;
     padding: 20px 0;
@@ -14,21 +50,8 @@ header{
 .logo img{
     height: 55px;
 }
-.navigation-menu{
-    float: right;
-    display: flex;
-    align-items: center;
-    min-height: 90px;
-}
-.navigation-menu a{
-    margin-left: 10px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 12px 20px;
-    border-radius: 4px;
-    transition: .3s linear;
-}
+
+
 .navigation-menu a:hover{
   background: aquamarine;
   color:black ;
@@ -43,6 +66,20 @@ header{
     display: none !important;
     cursor: pointer;
 }
+
+header.sticky i{
+ color: black;
+}  
+header.sticky a:hover{
+  background: rgb(0, 0, 0);
+  color:rgb(247, 240, 240) ;
+  transform: scale(1.1);
+}
+header.sticky .logo, 
+header.sticky nav a{
+  color: black;
+ }
+ 
 @media screen and (max-width: 896px){
   .menu-toggle-btn{
     display: block !important;

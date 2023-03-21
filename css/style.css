@@ -14,13 +14,14 @@ body{
     min-height: 100vh;
     background: rgb(0, 0, 0);  
 }
+
 .slide-container{
     position: relative; 
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
+    flex-wrap: wrap; 
+    margin: 90px 25px;
 }
 .slide-container::after{
     content: "";
@@ -74,7 +75,7 @@ body{
     padding: 20px;
     border-radius: 50px;
     box-sizing: border-box;
-    box-shadow: 0 1px 20px 3px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 1px 20px 3px rgb(0, 0, 0);
     transform: translateY(-100px);
 }
 .slide-container .card:hover .dos.dos2{
@@ -132,6 +133,14 @@ body{
     border-radius: 50%;
     border: 4px solid blue;
 }
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: aliceblue; 
+    text-align: center;
+  }
 .name{
     font-size: 18px;
     font-weight: 500;
