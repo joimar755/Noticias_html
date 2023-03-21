@@ -30,7 +30,7 @@ header{
 }
 .navigation-menu a{
   margin-left: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 249, 249);
   text-transform: uppercase;
   font-size: 14px;
   padding: 12px 20px;
@@ -54,7 +54,7 @@ header.sticky{
 
 .navigation-menu a:hover{
   background: aquamarine;
-  color:black ;
+  color: black ;
   transform: scale(1.1);
 }
 .menu-toggle-btn{
@@ -72,23 +72,24 @@ header.sticky i{
 }  
 header.sticky a:hover{
   background: rgb(0, 0, 0);
-  color:rgb(247, 240, 240) ;
+  color:rgb(248, 248, 248) ;
   transform: scale(1.1);
 }
 header.sticky .logo, 
 header.sticky nav a{
-  color: white;
+  color: rgb(10, 10, 10);
  }
  
 @media screen and (max-width: 896px){
   .menu-toggle-btn{
     display: block !important;
-  }
+  } 
+
   .navigation-menu{
     position: fixed;
     width: 100%;
     max-width: 400px;
-    background: #003838;
+    background: #0effff;
     top: 90px;
     right: 0;
     display: none;
@@ -105,6 +106,14 @@ header.sticky nav a{
     right: 10px;
 
   }
+  .navigation-menu a:hover{
+    background: white;
+    color: black ;
+    transform: scale(1.1);
+  }
+  .navigation-menu a{
+    color: black;
+   }
   .navigation-menu a{
     display: block;
     margin: 10px 0; 
