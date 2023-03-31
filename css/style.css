@@ -189,6 +189,15 @@ body{
     opacity: 1;
     background: blue;
 }
+#uno{
+    padding: 10px;
+}
+#dos{
+    padding: 10px;
+}
+#tres{
+    padding: 10px;
+}
 .button:hover{
     background: rgb(202, 255, 8); 
     color: black;
