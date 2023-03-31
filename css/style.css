@@ -170,6 +170,25 @@ body{
  cursor: pointer;
  transition: all 0.3s ease;
 }
+.boton{
+    border: none;
+    font-size: 16px;
+    color: azure;
+    padding: 8px 16px;
+    background-color: rgb(251, 255, 1);
+    color: black;
+    border-radius: 6px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hide {
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+    background: blue;
+}
 .button:hover{
     background: rgb(202, 255, 8); 
     color: black;
